@@ -1,0 +1,168 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Your registration is almost complete",
+      "size": "medium",
+      "weight": "bolder"
+    },
+    {
+      "type": "TextBlock",
+      "text": "What type of food do you prefer?",
+      "wrap": true
+    },
+    {
+      "type": "ImageSet",
+      "imageSize": "medium",
+      "images": [
+        {
+          "type": "Image",
+          "url": "http://contososcubademo.azurewebsites.net/assets/steak.jpg"
+        },
+        {
+          "type": "Image",
+          "url": "http://contososcubademo.azurewebsites.net/assets/chicken.jpg"
+        },
+        {
+          "type": "Image",
+          "url": "http://contososcubademo.azurewebsites.net/assets/tofu.jpg"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.ShowCard",
+      "title": "Steak",
+      "card": {
+        "type": "AdaptiveCard",
+       "body": [
+    {
+      "type": "TextBlock",
+      "size": "large",
+      "weight": "bolder",
+      "text": "This is Adaptive Card"
+    },
+   {
+            "type": "Input.ChoiceSet",
+            "id": "property",
+            "value":"1",
+            "style": "expanded",
+            "choices": [
+        {
+          "title": "Option 1",
+          "value": "1"
+        },
+        {
+          "title": "Option 2",
+          "value": "2"
+        },
+        {
+          "title": "option 3",
+          "value": "3"
+        }
+      ]
+    }
+  ],  
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "OK",
+            "data": {
+              "FoodChoice": "Steak"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "Action.ShowCard",
+      "title": "Chicken",
+      "card": {
+        "type": "AdaptiveCard",
+             "body": [
+    {
+      "type": "TextBlock",
+      "size": "large",
+      "weight": "bolder",
+      "text": "This is Adaptive Card"
+    },
+   {
+            "type": "Input.ChoiceSet",
+            "id": "property",
+            "value":"1",
+            "style": "expanded",
+            "choices": [
+        {
+          "title": "Option 1",
+          "value": "1"
+        },
+        {
+          "title": "Option 2",
+          "value": "2"
+        },
+        {
+          "title": "option 3",
+          "value": "3"
+        }
+      ]
+    }
+  ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+            "title": "OK",
+            "data": {
+              "FoodChoice": "Chicken"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "type": "Action.ShowCard",
+      "title": "Tofu",
+      "card": {
+        "type": "AdaptiveCard",
+            "body": [
+    {
+      "type": "TextBlock",
+      "size": "large",
+      "weight": "bolder",
+      "text": "This is Adaptive Card"
+    },
+   {
+            "type": "Input.ChoiceSet",
+            "id": "property",
+            "value":"1",
+            "style": "expanded",
+            "choices": [
+        {
+          "title": "Option 1",
+          "value": "1"
+        },
+        {
+          "title": "Option 2",
+          "value": "2"
+        },
+        {
+          "title": "option 3",
+          "value": "3"
+        }
+      ]
+    }
+  ],
+        "actions": [
+          {
+            "type": "Action.Submit",
+          "title": "Submit"
+          }
+        ]
+      }
+    }
+  ]
+}
+
